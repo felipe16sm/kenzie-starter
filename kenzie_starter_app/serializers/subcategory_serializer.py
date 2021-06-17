@@ -8,3 +8,4 @@ class SubcategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Subcategory
         fields = "__all__"
+        depth = 2

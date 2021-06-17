@@ -4,7 +4,7 @@ from rest_framework.pagination import PageNumberPagination, LimitOffsetPaginatio
 class CustomPage(PageNumberPagination):
     @classmethod
     def setParams(cls, page_size, max_page_size):
-        cls.page_size = "size"
+        cls.page_size_query_param = "size"
         cls.page_size = page_size
         cls.max_page_size = max_page_size
         return cls
